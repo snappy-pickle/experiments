@@ -1,0 +1,14 @@
+This is a test of the emergency
+file creation system. All content here
+is
+spurious
+and should be treated with suspicion.
+
+
+
+
+blah
+
+blah
+
+blah
