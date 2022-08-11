@@ -1,12 +1,12 @@
-# Python program to read 
-# file word by word
+# Sample Python program that reads a file token by token, where  
+# file token by token
 from concurrent.futures import process
 import os
 
 linecount = 0
-wordcount = 0
+tokencount = 0
 
-def processFile(targetFile, delimiter):
+def processFile(targetFile: str, delimiter: str = None):
     # where am i?
     print("Current working directory:", os.getcwd())
 
@@ -21,17 +21,19 @@ def processFile(targetFile, delimiter):
             # count the lines
             linecount += 1
 
-            # reading each word        
-            for word in line.split(delimiter):
+            # reading each token        
+            for token in line.split(delimiter):
     
-                # displaying the words           
-                print(word) 
+                # displaying the tokens           
+                print(token) 
 
-                # count the words
-                wordcount += 1
+                # count the tokens
+                tokencount += 1
 
-    print("Word count = ", wordcount)
+    print("token count = ", tokencount)
     print("Line count = ", linecount)
+
+##################################
 
 processFile('GFG.txt')
 processFile('people-list.csv',',')
